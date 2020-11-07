@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadastroEventoActivity">
+
+    <TextView
+        android:id="@+id/textView_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Evento" />
+
+    <EditText
+        android:id="@+id/editTextNome_do_Evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_Data_do_Evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data do Evento" />
+
+    <EditText
+        android:id="@+id/editTextDate_Data_do_Evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textViewLocal_do_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local do Evento" />
+
+    <Spinner
+        android:id="@+id/spinner_locais"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSalvar"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btn_Voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickVoltar"
+            android:text="Voltar" />
+    </LinearLayout>
+</LinearLayout>

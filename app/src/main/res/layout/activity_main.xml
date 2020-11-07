@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordem dos Eventos" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+            <ListView
+                android:id="@+id/ListView_Eventos"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:divider="@android:drawable/divider_horizontal_textfield"
+                android:dividerHeight="20dp" >
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pesquisa por nome de evento:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/editText_searchNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome do evento"
+                android:inputType="textPersonName"
+                android:tag="pesquisaNome" />
+
+            <Button
+                android:id="@+id/btn_searchNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSearch"
+                android:text="Pesquisa por nome" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ToggleButton"
+                android:textOff="Ordem Decrescente"
+                android:textOn="Ordem Crescente" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pesquisa por cidade:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/editText_searchCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cidade do evento"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_searchCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSearchCity"
+                android:text="Pesquisa por cidade" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRefreshPesquisa"
+                android:text="Limpar pesquisa" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btn_novo_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickNovoEvento"
+                android:text="Novo Evento" />
+
+            <Button
+                android:id="@+id/btn_locais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickLocal"
+                android:text="Novo Local" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
